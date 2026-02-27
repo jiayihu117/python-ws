@@ -23,7 +23,7 @@ DOMAIN = os.environ.get('DOMAIN', '')                # 项目分配的域名或�
 SUB_PATH = os.environ.get('SUB_PATH', 'sub')         # 节点订阅token
 NAME = os.environ.get('NAME', '')                    # 节点名称
 WSPATH = os.environ.get('WSPATH', UUID[:8])          # 节点路径
-PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 3000)  # http和ws端口，默认自动优先获取容器分配的端口
+PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 8080)  # http和ws端口，默认自动优先获取容器分配的端口
 AUTO_ACCESS = os.environ.get('AUTO_ACCESS', '').lower() == 'true' # 自动访问保活,默认关闭,true开启,false关闭,需同时填写DOMAIN变量
 DEBUG = os.environ.get('DEBUG', '').lower() == 'true' # 保持默认,调试使用,true开启调试
 
