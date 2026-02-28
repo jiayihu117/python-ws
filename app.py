@@ -507,7 +507,7 @@ async def websocket_handler(request):
 async def http_handler(request):
     if request.path == '/':
         try:
-            with open('index.html', 'r', encoding='utf-8') as f:
+            with open('page.html', 'r', encoding='utf-8') as f:
                 content = f.read()
             return web.Response(text=content, content_type='text/html')
         except:
